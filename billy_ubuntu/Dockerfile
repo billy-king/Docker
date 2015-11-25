@@ -6,4 +6,6 @@ RUN git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 RUN cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
 RUN git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+RUN sudo pip install --upgrade pip
+RUN sudo pip install --upgrade virtualenv
 RUN sudo pip install requests datetime BeautifulSoup4 pymongo
