@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM billyking/dadaubuntu:latest
 RUN apt-get update
 RUN apt-get install -y vim git build-essential php5 php5-sqlite node npm
 RUN npm install bower
