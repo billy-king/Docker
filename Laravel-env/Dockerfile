@@ -1,6 +1,11 @@
 FROM node:latest
 RUN apt-get update
-RUN apt-get install -y vim git build-essential php5 php5-sqlite
+RUN apt-get install -y vim wget git zsh build-essential php5 php5-sqlite
+
+RUN git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+RUN cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+RUN git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
 RUN npm install -g bower
 RUN php -r "readfile('https://getcomposer.org/installer');" | php
 RUN mv composer.phar /usr/local/bin/composer
