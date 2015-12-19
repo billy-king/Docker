@@ -1,6 +1,6 @@
 FROM node:latest
 RUN apt-get update
-RUN apt-get install -y vim wget git zsh build-essential php5 php5-sqlite
+RUN apt-get install -y vim wget git zsh build-essential php5 php5-sqlite php5-json
 
 RUN git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 RUN cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
