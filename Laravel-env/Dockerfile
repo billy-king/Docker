@@ -10,4 +10,4 @@ RUN npm install -g bower
 RUN php -r "readfile('https://getcomposer.org/installer');" | php
 RUN mv composer.phar /usr/local/bin/composer
 RUN composer global require "laravel/installer=~1.1"
-ENV PATH $PATH:~/.composer/vendor/bin
+ENV PATH $PATH:/root/.composer/vendor/bin
