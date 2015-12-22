@@ -9,5 +9,5 @@ RUN git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zs
 RUN npm install -g bower
 RUN php -r "readfile('https://getcomposer.org/installer');" | php
 RUN mv composer.phar /usr/local/bin/composer
-RUN composer global require "laravel/installer=~1.1"
+RUN composer global require "laravel/installer"
 ENV PATH $PATH:/root/.composer/vendor/bin
