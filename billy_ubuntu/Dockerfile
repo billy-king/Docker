@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN sudo apt-get update
-RUN sudo apt-get install -y iw curl libcurl4-openssl-dev net-tools python-pip python-dev build-essential g++ at wget git zsh gdb vim tcpdump gcc ssh iperf libpcap-dev man lsof
+RUN sudo apt-get install -y iw curl libcurl4-openssl-dev net-tools python-pip python-dev build-essential g++ at wget git zsh gdb vim tcpdump gcc ssh iperf libpcap-dev man lsof bridge-utils uml-utilities
 RUN git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 RUN cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
